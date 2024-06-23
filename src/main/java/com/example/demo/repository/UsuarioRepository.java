@@ -7,5 +7,5 @@ import com.example.demo.entity.UsuarioEntity;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<UsuarioEntity, String>{
-
+	UsuarioEntity findByCorreo(String correo);
 }
