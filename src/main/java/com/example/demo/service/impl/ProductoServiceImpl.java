@@ -21,4 +21,10 @@ public class ProductoServiceImpl implements ProductoService{
 		return productoRepository.findAll();
 	}
 
+	@Override
+	public ProductoEntity buscarProductoPorId(Integer id) {
+		// TODO Auto-generated method stub
+		return productoRepository.findById(id.longValue()).get();
+	}
+
 }
